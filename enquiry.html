@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Bright Futures SA to enquire about potential school support, programmes and partnerships.">
+  <meta name="theme-color" content="#176b45">
+   <title>Bright Futures SA </title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="images/logo.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header anim-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Bright Futures SA home">
+      <img src="logo.png" alt="Bright Futures SA logo" class="brand-logo">
+      <span>Bright Futures SA<small>Every child. Every opportunity.</small></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="nav" id="primary-navigation" aria-label="Main navigation">
+      <a href="index.html"><i class="fas fa-house"></i> Home</a>
+      <a href="about.html"><i class="fas fa-circle-info"></i> About us</a>
+      <a href="services.html"><i class="fas fa-graduation-cap"></i> Services</a>
+      <a href="enquiry.html" aria-current="page"><i class="fas fa-envelope-open-text"></i> Enquiries</a>
+      <a href="contact.html"><i class="fas fa-phone"></i> Contact</a>
+    </nav>
+
+    <a class="btn btn-primary btn-small header-cta" href="contact.html#partner">Partner with us <i class="fas fa-arrow-right"></i></a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Enquiries</div>
+      <span class="eyebrow">We're here to listen</span>
+      <h1>Tell us what support is needed.</h1>
+      <p class="lead">Schools, parents and community organisations can use this form to enquire about possible educational support or future programmes.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container form-shell">
+      <aside class="form-aside reveal-left">
+        <span class="eyebrow" style="color:#f5bd42">Before you enquire</span>
+        <h2 style="font-size:2rem">Let's understand the need.</h2>
+        <p>We want to understand the general support being requested so we can consider whether it fits our planned work.</p>
+        <ul>
+          <li>Tell us whether you represent a school, family or community organisation.</li>
+          <li>Describe the type of educational support needed.</li>
+          <li>Share only the minimum contact information needed to respond.</li>
+        </ul>
+      </aside>
+
+      <form class="form-card reveal-right" data-demo-form id="enquiryForm" novalidate>
+        <h2 style="font-size:1.8rem">Enquiry form</h2>
+        <p class="small-print">Fields marked * are required.</p>
+        <div class="form-grid">
+          <div class="field">
+            <label for="full-name">Your full name *</label>
+            <input id="full-name" name="full_name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email address *</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="role">I am enquiring as a *</label>
+            <select id="role" name="enquirer_type" required>
+              <option value="">Choose one</option>
+              <option>School representative</option>
+              <option>Parent or guardian</option>
+              <option>Community organisation</option>
+              <option>Potential donor or sponsor</option>
+              <option>Volunteer</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="province">Province *</label>
+            <select id="province" name="province" required>
+              <option value="">Select province</option>
+              <option>Eastern Cape</option>
+              <option>Free State</option>
+              <option>Gauteng</option>
+              <option>KwaZulu-Natal</option>
+              <option>Limpopo</option>
+              <option>Mpumalanga</option>
+              <option>North West</option>
+              <option>Northern Cape</option>
+              <option>Western Cape</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="support-type">Type of enquiry *</label>
+            <select id="support-type" name="support_type" required>
+              <option value="">Choose a topic</option>
+              <option>School supplies</option>
+              <option>Learning or reading support</option>
+              <option>School partnership</option>
+              <option>Donations or sponsorship</option>
+              <option>Volunteering</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="organisation">School or organisation (optional)</label>
+            <input id="organisation" name="organisation" autocomplete="organization">
+          </div>
+          <div class="field full">
+            <label for="message">How can we help? *</label>
+            <textarea id="message" name="message" required maxlength="2000" placeholder="Describe the general need. Please do not include a child's full name, ID number, medical details or other sensitive personal information."></textarea>
+            <span class="help">Maximum 2,000 characters. Avoid including identifying details about children.</span>
+          </div>
+          <div class="field full">
+            <label style="display:flex; align-items:flex-start; gap:8px; font-weight:600;">
+              <input type="checkbox" name="privacy_acknowledged" required style="width:auto; margin-top:6px;">
+              <span>I understand this is a prototype form and my information will not be sent. *</span>
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit enquiry <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <i class="fas fa-circle-check"></i>
+  <div class="toast-body">
+    <strong>Enquiry sent successfully</strong>
+    <span>Thank you, we'll be in touch soon.</span>
+  </div>
+  <button class="toast-close" type="button" aria-label="Dismiss notification">
+    <i class="fas fa-xmark"></i>
+  </button>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid reveal-stagger">
+      <div>
+        <a class="brand" href="index.html">
+          <img src="logo.png" alt="Bright Futures SA logo" class="brand-logo">
+          <span>Bright Futures SA<small>Education opens doors</small></span>
+        </a>
+        <p style="margin-top:18px">A proposed South African nonprofit initiative working to improve access to learning resources and educational support for primary school children.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <div class="footer-links">
+          <a href="about.html"><i class="fas fa-angle-right"></i> About our mission</a>
+          <a href="services.html"><i class="fas fa-angle-right"></i> Our programmes</a>
+          <a href="enquiry.html"><i class="fas fa-angle-right"></i> Request support</a>
+          <a href="contact.html"><i class="fas fa-angle-right"></i> Contact us</a>
+        </div>
+      </div>
+      <div>
+        <h3>Get involved</h3>
+        <div class="footer-links">
+          <a href="contact.html#partner"><i class="fas fa-angle-right"></i> Become a sponsor</a>
+          <a href="contact.html#volunteer"><i class="fas fa-angle-right"></i> Volunteer with us</a>
+          <a href="contact.html#donate"><i class="fas fa-angle-right"></i> Donate learning supplies</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Bright Futures SA. All rights reserved.</span>
+      <span>Draft website concept · South Africa</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  (function () {
+    const form = document.getElementById("enquiryForm");
+    const toast = document.getElementById("toast");
+    const toastClose = toast.querySelector(".toast-close");
+    let toastTimer = null;
+
+    function showToast() {
+      clearTimeout(toastTimer);
+      toast.classList.remove("is-visible");
+      void toast.offsetWidth;
+      toast.classList.add("is-visible");
+      toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 5000);
+    }
+
+    toastClose.addEventListener("click", () => {
+      clearTimeout(toastTimer);
+      toast.classList.remove("is-visible");
+    });
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalHtml = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+      const data = new FormData(form);
+
+      fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        body: data
+      })
+        .then(() => {
+          showToast();
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalHtml;
+        })
+        .catch(() => {
+          showToast();
+          form.reset();
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalHtml;
+        });
+    });
+  })();
+</script>
+</body>
+</html>
